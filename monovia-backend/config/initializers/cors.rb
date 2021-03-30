@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://monovia-frontend.firebaseapp.com'
+    origins 'https://monovia-a84fb.web.app'
 
     resource '*',
       headers: :any,
