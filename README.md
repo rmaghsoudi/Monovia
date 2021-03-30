@@ -20,5 +20,5 @@ of your money if answered incorrectly. The go to jail space will simply send you
 populate the properties you've purchased.
 
 
-## The app is currently deployed at https://monovia-frontend.firebaseapp.com/
+## The app is currently deployed at https://monovia-a84fb.web.app/
 
