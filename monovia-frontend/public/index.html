@@ -1,113 +1,113 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" property="og:url" content="https://monovia-frontend.firebaseapp.com/">
+    <meta
+      charset="utf-8"
+      property="og:url"
+      content="https://monovia-frontend.firebaseapp.com/"
+    />
     <title>Monovia</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script defer src="src/variables.js"></script>
     <script defer src="src/functions.js"></script>
     <script defer src="src/index.js"></script>
   </head>
-<!-- <h1>Welcome to Monovia!</h1> -->
-<body scroll="no" style="overflow: hidden">
+  <!-- <h1>Welcome to Monovia!</h1> -->
+  <body scroll="no" style="overflow: hidden">
+    <div class="game-board">
+      <div class="wall box20 flashing delay1"></div>
+      <div class="wall box19 flashing delay2"></div>
+      <div class="wall box18 flashing delay3"></div>
+      <div class="wall box17 flashing delay4"></div>
+      <div class="wall box16 flashing delay1"></div>
+      <div class="wall main-box">
+        <h1 id="header">WELCOME TO MONOVIA!</h1>
+        <h2>Type in your name</h2>
+        <h2 id="wallet"></h2>
+        <div class="container">
+          <div class="dice">
+            <div class="one">
+              <span></span>
+            </div>
+            <div class="two">
+              <span></span>
+              <span></span>
+            </div>
+            <div class="three">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="four">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="five">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="six">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
 
-<div class = "game-board">
-    <div class="wall box20 flashing delay1"></div>
-    <div class="wall box19 flashing delay2"></div>
-    <div class="wall box18 flashing delay3"></div>
-    <div class="wall box17 flashing delay4"></div>
-    <div class="wall box16 flashing delay1"></div>
-    <div class="wall main-box">
-      <h1 id="header">WELCOME TO MONOVIA!</h1>
-      <h2>Type in your name</h2>
-      <h2 id="wallet"></h2>
-      <div class="container">
-        <div class="dice">
-          <div class="one">
-            <span></span>
-          </div>
-          <div class="two">
-            <span></span>
-            <span></span>
-          </div>
-          <div class="three">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="four">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="five">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="six">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close-button flashing">&times;</span>
+            <h1>Insert Trivia Question Here!</h1>
+            <span class="true-button btn">true</span>
+            <span class="false-button btn">false</span>
           </div>
         </div>
       </div>
+      <!--END OF THE MAIN BOX DIV-->
 
-      <div class="modal">
-       <div class="modal-content">
-           <span class="close-button flashing">&times;</span>
-           <h1>Insert Trivia Question Here!</h1>
-           <span class = "true-button btn">true</span>
-           <span class = "false-button btn">false</span>
-       </div>
-   </div>
+      <div class="wall box15 flashing delay2"></div>
+      <div class="wall box1 flashing delay3"></div>
+      <div class="wall box14 flashing delay4"></div>
+      <div class="wall box2 flashing delay1"></div>
+      <div class="wall box13 flashing delay2"></div>
+      <div class="wall box3 flashing delay3"></div>
+      <div class="wall box12 flashing delay4"></div>
+      <div class="wall box4 flashing delay1"></div>
+      <div class="wall box11 flashing delay2"></div>
+      <div class="wall box5 flashing delay3"></div>
+      <div class="wall box6 flashing delay4"></div>
+      <div class="wall box7 flashing delay1"></div>
+      <div class="wall box8 flashing delay2"></div>
+      <div class="wall box9 flashing delay3"></div>
+      <div class="wall box10 flashing delay4"></div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
 
-    </div><!--END OF THE MAIN BOX DIV-->
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 
-    <div class="wall box15 flashing delay2"></div>
-    <div class="wall box1 flashing delay3"></div>
-    <div class="wall box14 flashing delay4"></div>
-    <div class="wall box2 flashing delay1"></div>
-    <div class="wall box13 flashing delay2"></div>
-    <div class="wall box3 flashing delay3"></div>
-    <div class="wall box12 flashing delay4"></div>
-    <div class="wall box4 flashing delay1"></div>
-    <div class="wall box11 flashing delay2"></div>
-    <div class="wall box5 flashing delay3"></div>
-    <div class="wall box6 flashing delay4"></div>
-    <div class="wall box7 flashing delay1"></div>
-    <div class="wall box8 flashing delay2"></div>
-    <div class="wall box9 flashing delay3"></div>
-    <div class="wall box10 flashing delay4"></div>
-</div>
-<!-- Code for Firebase deployment -->
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#config-web-app -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyCW4tiXR_8eYh7IGNkYtqZBtlVV3JF4GkQ",
-    authDomain: "monovia-frontend.firebaseapp.com",
-    databaseURL: "https://monovia-frontend.firebaseio.com",
-    projectId: "monovia-frontend",
-    storageBucket: "",
-    messagingSenderId: "707909737442",
-    appId: "1:707909737442:web:5d4f68c18fc78835"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-
-</body>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBWXiNwXYIhef6hmuh7ed3VRl2Cxy2Q8bs",
+        authDomain: "monovia-a84fb.firebaseapp.com",
+        projectId: "monovia-a84fb",
+        storageBucket: "monovia-a84fb.appspot.com",
+        messagingSenderId: "1020759169313",
+        appId: "1:1020759169313:web:d8ba337391102a954ec660",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </body>
 </html>
